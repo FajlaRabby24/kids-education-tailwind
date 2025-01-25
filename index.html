@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Education - Tailwind</title>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -17,9 +17,37 @@
         }
     </style>
 </head>
-
 <body>
-
+    <header>
+        <!-- navbar  -->
+        <nav class="flex items-center justify-between max-w-7xl mx-auto  py-2 px-5 border-b border-[#FEA301] lg:border-0 lg:py-3">
+            <!-- logo -->
+            <div class="flex items-center gap-x-1 cursor-pointer">
+                <img src="assets/logo.png" alt=""><span class="hidden lg:block uppercase text-2xl font-bold text-[#111111] ">school</span>
+            </div>
+            <ul class="hidden lg:flex items-center gap-x-8">
+                <li><a class="text-[#FEA301] text-2xl font-medium" href="#">Home</a></li>
+                <li><a class="text-[#01ACFD] text-2xl font-medium" href="#">About</a></li>
+                <li><a class="text-[#05D4DF] text-2xl font-medium" href="#">Faciliies</a></li>
+                <li><a class="text-[#5D58EF] text-2xl font-medium" href="#">Admission</a></li>
+            </ul>
+            <button class="hidden lg:block text-white bg-[#FEA301] px-5 py-2 text-xl rounded-md">Contact</button>
+            <div class="lg:hidden" ><i class='bx bx-menu text-3xl font-bold'></i></div>
+        </nav>
+        <!-- banner  -->
+         <div class="px-5 lg:flex lg:py-16 max-w-7xl mx-auto flex-row-reverse items-center justify-between">
+            <!-- banner img  -->
+             <div class="lg:w-2/5">
+                <img class="w-full" src="assets/hero-kids.png" alt="hero-kids">
+             </div>
+              <!-- banner content  -->
+            <div class="text-center mt-6 lg:text-left lg:w-1/2">
+                <h1 class="text-3xl lg:text-6xl  font-bold mb-5"><span class="text-[#FEA301]">Empoweringbr</span> <br>
+                    students from small age <span class="text-[#01ACFD]">towards vision</span></h1>
+                    <p class="mb-6">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
+                    <button class="py-3 px-6 bg-[#111111] rounded-md text-white">Enroll Now</button>
+            </div>
+         </div>
+    </header>
 </body>
-
 </html>
